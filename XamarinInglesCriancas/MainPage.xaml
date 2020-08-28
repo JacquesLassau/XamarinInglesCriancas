@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinInglesCriancas.MainPage"
+             Title="Inglês para Crianças">
+
+    <StackLayout>
+        <Image Source="logoapp" Margin="10"/>        
+        <Button Text="Cores" 
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="Purple"
+                TextColor="White"
+                Margin="10,0"
+                x:Name="btnCores"
+                Clicked="btnCores_Clicked"/>
+        <Button Text="Números"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="Orange"
+                TextColor="White"
+                Margin="10,0"
+                x:Name="btnNumeros"
+                Clicked="btnNumeros_Clicked"/>
+        <Button Text="Família"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="Red"
+                TextColor="White"
+                Margin="10,0"
+                x:Name="btnFamilia"
+                Clicked="btnFamilia_Clicked"/>
+        <Button Text="Sair"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="DarkCyan"
+                TextColor="White"
+                Margin="10,0"
+                x:Name="btnSair"
+                Clicked="btnSair_Clicked"/>        
+    </StackLayout>
+
+</ContentPage>
