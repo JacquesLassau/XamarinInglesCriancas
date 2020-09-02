@@ -178,5 +178,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\color_mustard_yellow.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\color_blue.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

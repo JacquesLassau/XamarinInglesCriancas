@@ -10,9 +10,16 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                
+
                 <StackLayout Orientation="Horizontal">
-                    <Image Source="color_black" />
+                    <Image Source="color_black" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="OnVoiceBlack"
+                                NumberOfTapsRequired="1"
+                            />
+                        </Image.GestureRecognizers>
+                    </Image>
                     <StackLayout>
                         <Label FontSize="Large" Text="Inglês: Black" VerticalOptions="EndAndExpand"/>
                         <Label FontSize="Large" Text="Português: Preto" VerticalOptions="StartAndExpand"/>
@@ -26,7 +33,14 @@
                          Color="gray" />
 
                 <StackLayout Orientation="Horizontal">
-                    <Image Source="color_brown" />
+                    <Image Source="color_brown">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="OnVoiceBrown"
+                                NumberOfTapsRequired="1"
+                            />
+                        </Image.GestureRecognizers>
+                    </Image>
                     <StackLayout>
                         <Label FontSize="Large" Text="Inglês: Brown" VerticalOptions="EndAndExpand"/>
                         <Label FontSize="Large" Text="Português: Marrom" VerticalOptions="StartAndExpand"/>
@@ -40,21 +54,14 @@
                          Color="gray" />
 
                 <StackLayout Orientation="Horizontal">
-                    <Image Source="color_dusty_yellow" />
-                    <StackLayout>
-                        <Label FontSize="Large" Text="Inglês: Dusty Yellow" VerticalOptions="EndAndExpand"/>
-                        <Label FontSize="Large" Text="Português: Amarelo Claro" VerticalOptions="StartAndExpand"/>
-                    </StackLayout>
-                </StackLayout>
-
-                <BoxView VerticalOptions="Center"
-                         HorizontalOptions="Center"
-                         HeightRequest="1"
-                         WidthRequest="360"  
-                         Color="gray" />
-
-                <StackLayout Orientation="Horizontal">
-                    <Image Source="color_gray" />
+                    <Image Source="color_gray">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="OnVoiceGray"
+                                NumberOfTapsRequired="1"
+                            />
+                        </Image.GestureRecognizers>
+                    </Image>
                     <StackLayout>
                         <Label FontSize="Large" Text="Inglês: Gray" VerticalOptions="EndAndExpand"/>
                         <Label FontSize="Large" Text="Português: Cinza" VerticalOptions="StartAndExpand"/>
@@ -68,7 +75,14 @@
                          Color="gray" />
 
                 <StackLayout Orientation="Horizontal">
-                    <Image Source="color_green" />
+                    <Image Source="color_green">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="OnVoiceGreen"
+                                NumberOfTapsRequired="1"
+                            />
+                        </Image.GestureRecognizers>
+                    </Image>
                     <StackLayout>
                         <Label FontSize="Large" Text="Inglês: Green" VerticalOptions="EndAndExpand"/>
                         <Label FontSize="Large" Text="Português: Verde" VerticalOptions="StartAndExpand"/>
@@ -82,10 +96,17 @@
                          Color="gray" />
 
                 <StackLayout Orientation="Horizontal">
-                    <Image Source="color_mustard_yellow" />
+                    <Image Source="color_mustard_yellow">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="OnVoiceYellow"
+                                NumberOfTapsRequired="1"
+                            />
+                        </Image.GestureRecognizers>
+                    </Image>
                     <StackLayout>
-                        <Label FontSize="Large" Text="Inglês: Mustard Yellow" VerticalOptions="EndAndExpand"/>
-                        <Label FontSize="Large" Text="Português: Amarelo Mostarda" VerticalOptions="StartAndExpand"/>
+                        <Label FontSize="Large" Text="Inglês: Yellow" VerticalOptions="EndAndExpand"/>
+                        <Label FontSize="Large" Text="Português: Amarelo" VerticalOptions="StartAndExpand"/>
                     </StackLayout>
                 </StackLayout>
 
@@ -96,7 +117,14 @@
                          Color="gray" />
 
                 <StackLayout Orientation="Horizontal">
-                    <Image Source="color_red" />
+                    <Image Source="color_red">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="OnVoiceRed"
+                                NumberOfTapsRequired="1"
+                            />
+                        </Image.GestureRecognizers>
+                    </Image>
                     <StackLayout>
                         <Label FontSize="Large" Text="Inglês: Red" VerticalOptions="EndAndExpand"/>
                         <Label FontSize="Large" Text="Português: Vermelho" VerticalOptions="StartAndExpand"/>
@@ -110,10 +138,38 @@
                          Color="gray" />
 
                 <StackLayout Orientation="Horizontal">
-                    <Image Source="color_white" />
+                    <Image Source="color_white">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="OnVoiceWhite"
+                                NumberOfTapsRequired="1"
+                            />
+                        </Image.GestureRecognizers>
+                    </Image>
                     <StackLayout>
                         <Label FontSize="Large" Text="Inglês: White" VerticalOptions="EndAndExpand"/>
                         <Label FontSize="Large" Text="Português: Branco" VerticalOptions="StartAndExpand"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <BoxView VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                         HeightRequest="1"
+                         WidthRequest="360"  
+                         Color="gray" />
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="color_blue">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="OnVoiceBlue"
+                                NumberOfTapsRequired="1"
+                            />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <StackLayout>
+                        <Label FontSize="Large" Text="Inglês: Blue" VerticalOptions="EndAndExpand"/>
+                        <Label FontSize="Large" Text="Português: Azul" VerticalOptions="StartAndExpand"/>
                     </StackLayout>
                 </StackLayout>
 
